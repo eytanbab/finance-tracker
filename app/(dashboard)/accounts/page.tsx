@@ -2,7 +2,7 @@
 
 import { useNewAccount } from '@/features/accounts/hooks/use-new-account';
 import { useGetAccounts } from '@/features/accounts/api/use-get-accounts';
-import { useBlukDeleteAccounts } from '@/features/accounts/api/use-bulk-delete';
+import { useBlukDeleteAccounts } from '@/features/accounts/api/use-bulk-delete-accounts';
 
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -50,7 +50,7 @@ const AccountsPage = () => {
         </CardHeader>
         <CardContent>
           <DataTable
-            filterKey='email'
+            filterKey='name'
             columns={columns}
             data={accounts}
             onDelete={(row) => {
