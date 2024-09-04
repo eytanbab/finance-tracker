@@ -15,6 +15,13 @@
       "when": 1725287911361,
       "tag": "0001_closed_frightful_four",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1725480458850,
+      "tag": "0002_aromatic_risque",
+      "breakpoints": true
     }
   ]
 }
