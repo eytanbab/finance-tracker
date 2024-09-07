@@ -1,12 +1,12 @@
 import { z } from 'zod';
 
-import { AccountForm } from './TransactionForm';
-import { insertAccountSchema } from '@/db/schema';
+import { TransactionForm } from './TransactionForm';
+import { insertTransactionSchema } from '@/db/schema';
 
-import { useOpenAccount } from '../hooks/use-open-account';
-import { useGetAccount } from '../api/use-get-transaction';
-import { useEditAccount } from '../api/use-edit-transaction';
-import { useDeleteAccount } from '../api/use-delete-transaction';
+import { useOpenTransaction } from '../hooks/use-open-transaction';
+import { useGetTransaction } from '../api/use-get-transaction';
+import { useEditTransaction } from '../api/use-edit-transaction';
+import { useDeleteTransaction } from '../api/use-delete-transaction';
 
 import { useConfirm } from '@/hooks/use-confirm';
 
