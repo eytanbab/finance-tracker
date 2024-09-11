@@ -23,7 +23,6 @@ type Props = {
 };
 
 export const SpendingPie = ({ data = [] }: Props) => {
-  console.log('categories:', data);
   const [chartType, setChartType] = useState('pie');
 
   const onTypeChange = (type: string) => {
