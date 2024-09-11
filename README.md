@@ -14,25 +14,26 @@
 
 ## Key Features
 
-- **Interactive Dashboard**: Gain insights with a dynamic and customizable financial overview.
-- **Versatile Charts**: Analyze data with multiple chart types.
-- **Smart Filters**: Easily filter transactions by account and date.
-- **Comprehensive Transactions Table**: Manage your financial data efficiently.
-- **Simple Data Entry**: Add transactions effortlessly with an intuitive form.
-- **Customizable Categories**: Personalize your transaction categories and accounts.
-- **Income/Expense Toggle**: Seamlessly switch views for better financial tracking.
-- **API Integration**: Efficiently handle API requests with Hono.js.
-- **Advanced State Management**: Keep your app’s state in check with Tanstack React Query.
-- **Bank Connectivity**: Automatically fetch transactions via Plaid integration.
-- **Premium Upgrades**: Offer and manage premium features with Lemon Squeezy.
-- **Secure Authentication**: Protect user access with Clerk (Core 2).
-- **Efficient Bulk Actions**: Perform bulk deletions and searches with ease.
-- **Subscription and Bank Management**: Manage subscriptions and bank connections smoothly.
-- **Personalized User Settings**: Customize user preferences to fit individual needs.
-- **Modern Web Experience**: Built with Next.js 14 for cutting-edge performance.
-- **Elegant Design**: Styled with TailwindCSS and Shadcn UI for a sleek, responsive look.
-- **Robust Data Handling**: Utilize PostgreSQL and Drizzle ORM for reliable database management.
-- **Seamless Deployment**: Hosted on Vercel for top-notch performance and scalability.
+- 📊 **Interactive Financial Dashboard**: Visualize your financial data with customizable chart types.
+- 🔁 **Changeable Chart Types**: Switch between area, line, and bar charts.
+- 🗓 **Account and Date Filters**: Easily filter data by account and date range.
+- 💹 **Detailed Transactions Table**: Manage and review your transactions in detail.
+- ➕ **Add Transactions**: Simple forms to input new transactions.
+- 🧩 **Customizable Select Components**: Tailored UI components for a better user experience.
+- 💵 **Income and Expense Toggle**: Switch between income and expense views.
+- 🔄 **CSV Transaction Imports**: Import transactions effortlessly using CSV files.
+- 🔥 **API Integration**: Powered by Hono.js for robust API management.
+- 🪝 **State Management**: Utilizes Tanstack React Query for efficient state handling.
+- 🔗 **Bank Connections**: Connect to your bank accounts using Plaid.
+- 💳 **Premium Upgrades**: Manage premium features through Lemon Squeezy.
+- 🔐 **Authentication**: Secure login with Clerk (Core 2).
+- 🗑 **Bulk Delete & Search**: Manage transactions with ease.
+- ⚙️ **Bank Disconnection & Subscription Management**: Manage bank connections and subscriptions effectively.
+- 👤 **User Settings Customization**: Personalize user settings to fit your needs.
+- 🌐 **Built with Next.js 14**: Leverage the power of Next.js for performance and scalability.
+- 🎨 **Styled with TailwindCSS & Shadcn UI**: Modern and responsive design with TailwindCSS and Shadcn UI.
+- 💾 **PostgreSQL & Drizzle ORM**: Reliable data storage and management.
+- 🚀 **Deployed on Vercel**: Fast and reliable hosting with Vercel.
 
 ## Getting Started
 
