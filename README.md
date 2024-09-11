@@ -7,8 +7,6 @@
 ![Drizzle ORM](https://img.shields.io/badge/drizzle-C5F74F?style=for-the-badge&logo=drizzle&logoColor=black)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 ![Clerk](https://img.shields.io/badge/Clerk-purple?style=for-the-badge&logo=clerk&logoColor=white)
-![Plaid](https://img.shields.io/badge/Plaid-000000?style=for-the-badge&logo=plaid&logoColor=white)
-![Lemon Squeezy](https://img.shields.io/badge/Lemon_Squeezy-F9B300?style=for-the-badge&logo=lemon&logoColor=white)
 ![Tanstack React Query](https://img.shields.io/badge/React_Query-FF4154?style=for-the-badge&logo=ReactQuery&logoColor=white)
 ![Hono.js](https://img.shields.io/badge/hono-E36002?style=for-the-badge&logo=hono&logoColor=white)
 
@@ -21,11 +19,9 @@
 - ➕ **Add Transactions**: Simple forms to input new transactions.
 - 🧩 **Customizable Select Components**: Tailored UI components for a better user experience.
 - 💵 **Income and Expense Toggle**: Switch between income and expense views.
-- 🔄 **CSV Transaction Imports**: Import transactions effortlessly using CSV files.
 - 🔥 **API Integration**: Powered by Hono.js for robust API management.
 - 🪝 **State Management**: Utilizes Tanstack React Query for efficient state handling.
 - 🔗 **Bank Connections**: Connect to your bank accounts using Plaid.
-- 💳 **Premium Upgrades**: Manage premium features through Lemon Squeezy.
 - 🔐 **Authentication**: Secure login with Clerk (Core 2).
 - 🗑 **Bulk Delete & Search**: Manage transactions with ease.
 - ⚙️ **Bank Disconnection & Subscription Management**: Manage bank connections and subscriptions effectively.
