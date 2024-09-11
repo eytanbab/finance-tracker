@@ -3,7 +3,7 @@ import { z } from 'zod';
 import { useNewTransaction } from '../hooks/use-new-transaction';
 import { insertTransactionSchema } from '@/db/schema';
 import { useCreateTransaction } from '../api/use-create-transaction';
-import { TransactionForm } from './TransactionForm';
+import { TransactionForm } from './transaction-form';
 
 import { useGetCategories } from '@/features/categories/api/use-get-categories';
 import { useCreateCategory } from '@/features/categories/api/use-create-category';

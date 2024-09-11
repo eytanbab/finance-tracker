@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { CategoryForm } from './CategoryForm';
+import { CategoryForm } from './category-form';
 import { useNewCategory } from '../hooks/use-new-category';
 import { insertCategorySchema } from '@/db/schema';
 import { useCreateCategory } from '../api/use-create-category';

@@ -1,6 +1,6 @@
 import { z } from 'zod';
 import { useNewAccount } from '../hooks/use-new-account';
-import { AccountForm } from './AccountForm';
+import { AccountForm } from './account-form';
 import { insertAccountSchema } from '@/db/schema';
 import {
   Sheet,

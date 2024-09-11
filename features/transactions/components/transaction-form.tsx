@@ -3,8 +3,8 @@ import { Trash } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
-import { DatePicker } from '@/components/DatePicker';
-import { AmountInput } from '@/components/AmountInput';
+import { DatePicker } from '@/components/date-picker';
+import { AmountInput } from '@/components/amount-input';
 
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -19,7 +19,7 @@ import {
   FormLabel,
   FormMessage,
 } from '@/components/ui/form';
-import { Select } from '@/components/Select';
+import { Select } from '@/components/select';
 import { Textarea } from '@/components/ui/textarea';
 
 const formSchema = z.object({

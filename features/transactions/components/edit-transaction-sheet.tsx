@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import { TransactionForm } from './TransactionForm';
+import { TransactionForm } from './transaction-form';
 import { insertTransactionSchema } from '@/db/schema';
 
 import { useOpenTransaction } from '../hooks/use-open-transaction';
