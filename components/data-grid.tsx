@@ -4,7 +4,7 @@ import { useGetSummary } from '@/features/summary/api/use-get-summary';
 import { formatDateRange } from '@/lib/utils';
 import { useSearchParams } from 'next/navigation';
 
-import { DataCard, DataCarDLoading } from './data-card';
+import { DataCard, DataCardLoading } from './data-card';
 
 import { FaPiggyBank } from 'react-icons/fa';
 import { FaArrowTrendUp, FaArrowTrendDown } from 'react-icons/fa6';
@@ -20,9 +20,9 @@ export const DataGrid = () => {
   if (isLoading) {
     return (
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 pb-2 mb-8'>
-        <DataCarDLoading />
-        <DataCarDLoading />
-        <DataCarDLoading />
+        <DataCardLoading />
+        <DataCardLoading />
+        <DataCardLoading />
       </div>
     );
   }

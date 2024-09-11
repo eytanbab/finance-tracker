@@ -98,7 +98,7 @@ export const DataCard = ({
   );
 };
 
-export const DataCarDLoading = () => {
+export const DataCardLoading = () => {
   return (
     <Card className='border-none drop-shadow-sm h-[192px]'>
       <CardHeader className='flex flex-row items-center justify-between gap-x-4'>
