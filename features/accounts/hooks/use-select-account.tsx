@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import { useCreateAccount } from '../api/use-create-account';
 import { useGetAccounts } from '../api/use-get-accounts';
 
-import { Select } from '@/components/Select';
+import { Select } from '@/components/select';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
