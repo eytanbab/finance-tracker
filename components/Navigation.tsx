@@ -1,7 +1,7 @@
 'use client';
 import { usePathname, useRouter } from 'next/navigation';
 import { useMedia } from 'react-use';
-import NavButton from './NavButton';
+import NavButton from './nav-button';
 import { useState } from 'react';
 
 import { Sheet, SheetTrigger, SheetContent } from './ui/sheet';

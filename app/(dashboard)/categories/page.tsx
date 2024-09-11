@@ -11,7 +11,7 @@ import { Skeleton } from '@/components/ui/skeleton';
 import { Loader2, PlusIcon } from 'lucide-react';
 
 import { columns } from './columns';
-import { DataTable } from '../../../components/DataTable';
+import { DataTable } from '../../../components/data-table';
 
 const CategoriesPage = () => {
   const newCategory = useNewCategory();
