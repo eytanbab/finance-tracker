@@ -8,6 +8,7 @@ import { Sheet, SheetTrigger, SheetContent } from './ui/sheet';
 import { Button } from './ui/button';
 import { Menu } from 'lucide-react';
 
+// Define navigation routes for the app
 const routes = [
   {
     href: '/',
@@ -38,11 +39,13 @@ const Navigation = () => {
   const pathname = usePathname();
   const isMobile = useMedia('(max-width: 1024px)', false);
 
+  // Handle navigation and close the menu after a link is clicked
   const onClick = (href: string) => {
     router.push(href);
     setIsOpen(false);
   };
 
+  // Mobile view: display navigation in a side sheet
   if (isMobile) {
     return (
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -73,6 +76,7 @@ const Navigation = () => {
     );
   }
 
+  // Desktop view: display navigation as a horizontal bar
   return (
     <nav className='hidden lg:flex items-center gap-x-2 '>
       {routes.map((route) => (
