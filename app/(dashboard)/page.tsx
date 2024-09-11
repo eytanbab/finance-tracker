@@ -22,7 +22,7 @@ export default function DashboardPage() {
           className='w-full mx-auto lg:w-auto'
         >
           <PlusIcon className='size-4 mr-2' />
-          Add new tranasction
+          Add new transaction
         </Button>
       )}
       <DataCharts />
