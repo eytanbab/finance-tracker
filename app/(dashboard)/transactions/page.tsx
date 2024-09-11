@@ -15,7 +15,7 @@ import { toast } from 'sonner';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Skeleton } from '@/components/ui/skeleton';
-import { DataTable } from '../../../components/DataTable';
+import { DataTable } from '../../../components/data-table';
 import { UploadButton } from './upload-button';
 import { ImportCard } from './import-card';
 
