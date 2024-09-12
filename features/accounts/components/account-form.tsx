@@ -69,7 +69,10 @@ export const AccountForm = ({
             </FormItem>
           )}
         />
-        <Button className='w-full' disabled={disabled}>
+        <Button
+          className='w-full'
+          disabled={disabled || form.getValues('name') === ''}
+        >
           {id ? 'Save changes' : 'Create account'}
         </Button>
         {!!id && (
