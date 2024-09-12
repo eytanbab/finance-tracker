@@ -60,11 +60,18 @@ export const AccountForm = ({
             <FormItem>
               <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input
-                  disabled={disabled}
-                  placeholder='e.g. Cash, Bank, Credit Card'
-                  {...field}
-                />
+                <>
+                  <Input
+                    disabled={disabled}
+                    placeholder='e.g. Cash, Bank, Credit Card'
+                    {...field}
+                  />
+                  {disabled || form.getValues('name') === '' ? (
+                    <p style={{ color: '#f43f5e', fontSize: '12px' }}>
+                      * Name is required
+                    </p>
+                  ) : null}
+                </>
               </FormControl>
             </FormItem>
           )}
