@@ -32,12 +32,15 @@ export const AccountForm = ({
   defaultValues,
   onSubmit,
   onDelete,
-  disabled,
+  disabled: isPending,
 }: Props) => {
   const form = useForm<FormValues>({
     resolver: zodResolver(formSchema),
     defaultValues: defaultValues,
   });
+
+  const watchName = form.watch('name');
+  const isFormValid = watchName && !isPending;
 
   const handleSubmit = (values: FormValues) => {
     onSubmit(values);
@@ -62,33 +65,35 @@ export const AccountForm = ({
               <FormControl>
                 <>
                   <Input
-                    disabled={disabled}
+                    data-cy='account-name-input'
+                    disabled={isPending}
                     placeholder='e.g. Cash, Bank, Credit Card'
                     {...field}
                   />
-                  {disabled || form.getValues('name') === '' ? (
+                  {form.getValues('name') === '' && (
                     <p style={{ color: '#f43f5e', fontSize: '12px' }}>
                       * Name is required
                     </p>
-                  ) : null}
+                  )}
                 </>
               </FormControl>
             </FormItem>
           )}
         />
         <Button
+          data-cy='submit-account-button'
           className='w-full'
-          disabled={disabled || form.getValues('name') === ''}
+          disabled={!isFormValid}
         >
           {id ? 'Save changes' : 'Create account'}
         </Button>
         {!!id && (
           <Button
             type='button'
-            disabled={disabled}
             onClick={handleDelete}
             className='w-full'
             variant='outline'
+            data-cy='delete-account-button'
           >
             <Trash className='size-4 mr-2' />
             Delete account
