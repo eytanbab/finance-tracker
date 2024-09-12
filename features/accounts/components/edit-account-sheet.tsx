@@ -67,7 +67,7 @@ const EditAccountSheet = () => {
       <Sheet open={isOpen} onOpenChange={onClose}>
         <SheetContent className='space-y-4'>
           <SheetHeader>
-            <SheetTitle>Edit Account</SheetTitle>
+            <SheetTitle data-cy='form-title'>Edit Account</SheetTitle>
             <SheetDescription>Edit an existing account.</SheetDescription>
           </SheetHeader>
           {isLoading ? (

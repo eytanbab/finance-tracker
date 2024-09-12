@@ -29,7 +29,7 @@ const NewAccountSheet = () => {
     <Sheet open={isOpen} onOpenChange={onClose}>
       <SheetContent className='space-y-4'>
         <SheetHeader>
-          <SheetTitle>New Account</SheetTitle>
+          <SheetTitle data-cy='form-title'>New Account</SheetTitle>
           <SheetDescription>
             Create a new account to track your transactions.
           </SheetDescription>

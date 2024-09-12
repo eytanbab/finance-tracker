@@ -45,10 +45,16 @@ export const useConfirm = (
           <DialogDescription>{message}</DialogDescription>
         </DialogHeader>
         <DialogFooter className='pt-2'>
-          <Button onClick={handleCancel} variant='outline'>
+          <Button
+            data-cy='cancel-button'
+            onClick={handleCancel}
+            variant='outline'
+          >
             Cancel
           </Button>
-          <Button onClick={handleConfirm}>Confirm</Button>
+          <Button data-cy='confirm-button' onClick={handleConfirm}>
+            Confirm
+          </Button>
         </DialogFooter>
       </DialogContent>
     </Dialog>
