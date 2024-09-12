@@ -3,7 +3,6 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 import { cn } from '@/lib/utils';
 
-
 type Props = {
   href: string;
   label: string;
@@ -21,7 +20,9 @@ const NavButton = ({ href, label, isActive }: Props) => {
         isActive ? 'bg-white/10 text-white' : 'bg-transparent'
       )}
     >
-      <Link href={href}>{label}</Link>
+      <Link href={href} data-cy={`nav-button-${label.toLowerCase()}`}>
+        {label}
+      </Link>
     </Button>
   );
 };

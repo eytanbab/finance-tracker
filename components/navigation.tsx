@@ -51,6 +51,7 @@ const Navigation = () => {
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger>
           <Button
+            data-cy='nav-button-open-sheet'
             variant='outline'
             size='sm'
             className='font-normal bg-white/10 hover:bg-white/20 hover:text-white border-none focus-visible:ring-offset-0 focus-visible:ring-transparent outline-none text-white focus:bg-white/30 transition'
@@ -66,6 +67,7 @@ const Navigation = () => {
                 variant={route.href === pathname ? 'secondary' : 'ghost'}
                 onClick={() => onClick(route.href)}
                 className='w-full justify-start'
+                data-cy={`nav-button-${route.label.toLowerCase()}`}
               >
                 {route.label}
               </Button>
