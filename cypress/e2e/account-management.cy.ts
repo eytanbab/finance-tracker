@@ -8,7 +8,7 @@ describe('Account management', () => {
     });
     cy.visit('/accounts');
   });
-
+  // New account creation
   it('should have the create account button disabled initially', () => {
     cy.get('[data-cy="add-new-account-button"]').click();
     cy.get('[data-cy="form-title"]').should('contain.text', 'New Account');
@@ -29,6 +29,7 @@ describe('Account management', () => {
     cy.contains('new account').should('be.visible');
   });
 
+  // Editing account name
   it('should edit the new account name to edited account', () => {
     cy.contains('td', 'new account')
       .parent()
@@ -54,6 +55,7 @@ describe('Account management', () => {
     cy.contains('edited account').should('be.visible');
   });
 
+  // Account deletion
   it('should delete the edited account from the edit form', () => {
     cy.contains('td', 'edited account')
       .parent()
