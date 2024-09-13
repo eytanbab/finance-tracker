@@ -1,5 +1,6 @@
 'use client';
 
+import { useTheme } from 'next-themes';
 import { useMemo } from 'react';
 import { SingleValue } from 'react-select';
 import CreatableSelect from 'react-select/creatable';
@@ -29,6 +30,9 @@ export const Select = ({
     return options.find((option) => option.value === value);
   }, [options, value]);
 
+  const { theme } = useTheme();
+  const isDarkMode = theme === 'dark';
+
   return (
     <CreatableSelect
       placeholder={placeholder}
@@ -36,10 +40,42 @@ export const Select = ({
       styles={{
         control: (base) => ({
           ...base,
-          borderColor: '#e2e8f0',
+          borderColor: isDarkMode ? '#1e293b' : '##cbd5e1',
+          backgroundColor: 'transparent',
           ':hover': {
-            borderColor: '#e2e8f0',
+            borderColor: isDarkMode ? '#94a3b8' : '#111827',
+            backgroundColor: isDarkMode ? '#111827' : '#fff',
           },
+        }),
+        menu: (base) => ({
+          ...base,
+          backgroundColor: isDarkMode ? '#111827' : '#fff',
+        }),
+        singleValue: (base) => ({
+          ...base,
+          color: isDarkMode ? '#fff' : '#111827',
+        }),
+        option: (base, state) => ({
+          ...base,
+          backgroundColor: state.isFocused
+            ? isDarkMode
+              ? '#1f2937' // Dark mode hover background
+              : '#1f2937' // Light mode hover background
+            : isDarkMode
+            ? '#111827' // Dark mode default background
+            : '#fff', // Light mode default background
+          color: state.isFocused
+            ? '#fff' // Text color on hover (white in both modes)
+            : isDarkMode
+            ? '#fff' // Default text color for dark mode
+            : '#111827', // Default text color for light mode
+          ':active': {
+            backgroundColor: isDarkMode ? '#1f2937' : '#e2e8f0', // Active background on click
+          },
+        }),
+        placeholder: (base) => ({
+          ...base,
+          color: isDarkMode ? '#94a3b8' : '#64748b',
         }),
       }}
       value={formattedValue}
