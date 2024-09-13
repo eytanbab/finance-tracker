@@ -61,6 +61,7 @@ export const CategoryForm = ({
               <FormLabel>Name</FormLabel>
               <FormControl>
                 <Input
+                  data-cy='category-name-input'
                   disabled={disabled}
                   placeholder='e.g. Food, Travel, etc.'
                   {...field}
@@ -69,11 +70,16 @@ export const CategoryForm = ({
             </FormItem>
           )}
         />
-        <Button className='w-full' disabled={disabled}>
+        <Button
+          data-cy='submit-category-button'
+          className='w-full'
+          disabled={disabled}
+        >
           {id ? 'Save changes' : 'Create category'}
         </Button>
         {!!id && (
           <Button
+            data-cy='delete-category-button'
             type='button'
             disabled={disabled}
             onClick={handleDelete}

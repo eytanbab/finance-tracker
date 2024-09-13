@@ -67,7 +67,7 @@ const EditCategorySheet = () => {
       <Sheet open={isOpen} onOpenChange={onClose}>
         <SheetContent className='space-y-4'>
           <SheetHeader>
-            <SheetTitle>Edit Category</SheetTitle>
+            <SheetTitle data-cy='form-title'>Edit Category</SheetTitle>
             <SheetDescription>Edit an existing category.</SheetDescription>
           </SheetHeader>
           {isLoading ? (

@@ -43,7 +43,11 @@ const CategoriesPage = () => {
       <Card className='border-none drop-shadow-sm'>
         <CardHeader className='gap-y-2 lg:flex-row lg:items-center lg:justify-between'>
           <CardTitle className='text-xl line-clamp-1'>Categories</CardTitle>
-          <Button onClick={newCategory.onOpen} size='sm'>
+          <Button
+            data-cy='add-new-category-button'
+            onClick={newCategory.onOpen}
+            size='sm'
+          >
             <PlusIcon className='size-4 mr-2' />
             Add new
           </Button>

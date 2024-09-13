@@ -31,7 +31,7 @@ const NewCategorySheet = () => {
     <Sheet open={isOpen} onOpenChange={onClose}>
       <SheetContent className='space-y-4'>
         <SheetHeader>
-          <SheetTitle>New Category</SheetTitle>
+          <SheetTitle data-cy='form-title'>New Category</SheetTitle>
           <SheetDescription>
             Create a new category to organize your transactions.
           </SheetDescription>

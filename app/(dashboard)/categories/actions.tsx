@@ -40,12 +40,17 @@ export const Actions = ({ id }: Props) => {
       <ConfirmDialog />
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant='ghost' className='size-8 p-0'>
+          <Button
+            data-cy='more-actions-button'
+            variant='ghost'
+            className='size-8 p-0'
+          >
             <MoreHorizontal className='size-4' />
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align='end'>
           <DropdownMenuItem
+            data-cy='edit-button'
             disabled={deleteMutation.isPending}
             onClick={() => onOpen(id)}
           >
@@ -53,6 +58,7 @@ export const Actions = ({ id }: Props) => {
             Edit
           </DropdownMenuItem>
           <DropdownMenuItem
+            data-cy='delete-category-button'
             disabled={deleteMutation.isPending}
             onClick={handleDelete}
           >
