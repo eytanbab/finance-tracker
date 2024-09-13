@@ -6,6 +6,7 @@ import './globals.css';
 import { QueryProvider } from '@/providers/query-provider';
 import { SheetProvider } from '@/providers/sheet-provider';
 import { Toaster } from '@/components/ui/sonner';
+import { ThemeProvider } from 'next-themes';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,13 +22,15 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider afterSignOutUrl='/'>
-      <html lang='en'>
+      <html suppressHydrationWarning lang='en'>
         <body className={inter.className}>
-          <QueryProvider>
-            <SheetProvider />
-            <Toaster />
-            {children}
-          </QueryProvider>
+          <ThemeProvider attribute='class'>
+            <QueryProvider>
+              <SheetProvider />
+              <Toaster />
+              {children}
+            </QueryProvider>
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
