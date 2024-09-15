@@ -17,14 +17,10 @@
 - 🗓 **Account and Date Filters**: Easily filter data by account and date range.
 - 💹 **Detailed Transactions Table**: Manage and review your transactions in detail.
 - ➕ **Add Transactions**: Simple forms to input new transactions.
-- 🧩 **Customizable Select Components**: Tailored UI components for a better user experience.
-- 💵 **Income and Expense Toggle**: Switch between income and expense views.
 - 🔥 **API Integration**: Powered by Hono.js for robust API management.
-- 🪝 **State Management**: Utilizes Tanstack React Query for efficient state handling.
-- 🔗 **Bank Connections**: Connect to your bank accounts using Plaid.
-- 🔐 **Authentication**: Secure login with Clerk (Core 2).
-- 🗑 **Bulk Delete & Search**: Manage transactions with ease.
-- ⚙️ **Bank Disconnection & Subscription Management**: Manage bank connections and subscriptions effectively.
+- 📚 **State Management**: Utilizes Tanstack React Query for efficient state handling.
+- 🔐 **Authentication**: Secure login with Clerk.
+- 🗑 **Bulk Delete**: Manage accouts, categories and transactions with ease.
 - 👤 **User Settings Customization**: Personalize user settings to fit your needs.
 - 🌐 **Built with Next.js 14**: Leverage the power of Next.js for performance and scalability.
 - 🎨 **Styled with TailwindCSS & Shadcn UI**: Modern and responsive design with TailwindCSS and Shadcn UI.
@@ -47,7 +43,7 @@
    ```
 
 3. **Set Up Environment Variables**:
-   Create a `.env` file in the root directory and add the necessary environment variables (Plaid, Clerk, Lemon Squeezy, etc.).
+   Create a `.env` file in the root directory and add the necessary environment variables (Clerk, Dattabase, etc.).
 
 4. **Run the Development Server**:
 
@@ -66,9 +62,9 @@
 
 ## Usage
 
+- **Customize Your Experience**: Personalize settings, switch between chart types, and filter data by account and date for a tailored financial overview.
 - **View Your Finances**: Access the dashboard to get a comprehensive view of your financial data.
 - **Manage Transactions**: Use the forms and filters to add, edit, and organize your transactions and accounts.
-- **Connect Bank Accounts**: Link your bank accounts to automatically fetch transactions and manage subscriptions for premium features.
 
 ## Contributing
 
