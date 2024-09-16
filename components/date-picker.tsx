@@ -22,6 +22,7 @@ export const DatePicker = ({ value, onChange, disabled }: Props) => {
         <Button
           disabled={disabled}
           variant='outline'
+          data-cy='date-input-button'
           className={cn(
             'w-full justify-start text-left font-normal',
             !value && 'text-muted-foreground'

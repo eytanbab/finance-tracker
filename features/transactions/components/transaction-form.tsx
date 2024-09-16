@@ -87,7 +87,7 @@ export const TransactionForm = ({
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Date</FormLabel>
+              <FormLabel data-cy='date-label'>Date</FormLabel>
               <FormControl>
                 <DatePicker
                   value={field.value}
@@ -103,7 +103,7 @@ export const TransactionForm = ({
           control={form.control}
           render={({ field }) => (
             <FormItem>
-              <FormLabel>Account</FormLabel>
+              <FormLabel data-cy='account-label'>Account</FormLabel>
               <FormControl>
                 <Select
                   placeholder='Select an account'
@@ -138,12 +138,14 @@ export const TransactionForm = ({
         />
         <FormField
           name='payee'
+          data-cy='payee-label'
           control={form.control}
           render={({ field }) => (
             <FormItem>
               <FormLabel>Payee</FormLabel>
               <FormControl>
                 <Input
+                  data-cy='payee-input'
                   disabled={disabled}
                   placeholder='Add a payee'
                   {...field}
@@ -154,6 +156,7 @@ export const TransactionForm = ({
         />
         <FormField
           name='amount'
+          data-cy='amount-label'
           control={form.control}
           render={({ field }) => (
             <FormItem>
@@ -184,7 +187,11 @@ export const TransactionForm = ({
             </FormItem>
           )}
         />
-        <Button className='w-full' disabled={disabled}>
+        <Button
+          data-cy='submit-transaction-button'
+          className='w-full'
+          disabled={disabled}
+        >
           {id ? 'Save changes' : 'Create transaction'}
         </Button>
         {!!id && (

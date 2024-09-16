@@ -67,7 +67,7 @@ const NewTransactionSheet = () => {
     <Sheet open={isOpen} onOpenChange={onClose}>
       <SheetContent className='space-y-4'>
         <SheetHeader>
-          <SheetTitle>New Transaction</SheetTitle>
+          <SheetTitle data-cy='form-title'>New Transaction</SheetTitle>
           <SheetDescription>Add a new transaction</SheetDescription>
         </SheetHeader>
         {isLoading ? (

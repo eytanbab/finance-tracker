@@ -117,6 +117,7 @@ const TransactionsPage = () => {
           </CardTitle>
           <div className='flex flex-col lg:flex-row gap-y-2 items-center gap-x-2'>
             <Button
+              data-cy='add-new-transaction-button'
               onClick={newTransaction.onOpen}
               size='sm'
               className='w-full lg:w-auto'
